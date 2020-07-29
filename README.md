@@ -9,7 +9,7 @@ See [package.json] version
 
 ## Platforms / Technologies
 * [JavaScript] Primary language for this project
-* [Tensorflow.js] for server-side routing
+* [Tensorflow.js] for flowing tensors
 * [React] A JavaScript library for building user interfaces
 * [Spectacle] for the presentation
 * [ESLint] to maintain a consistent code style in JavaScript
