@@ -4,6 +4,8 @@
 ## Status
 Prototype
 
+## Demo
+
 ## Version
 See [package.json] version
 
@@ -13,6 +15,9 @@ See [package.json] version
 * [React] A JavaScript library for building user interfaces
 * [Spectacle] for the presentation
 * [ESLint] to maintain a consistent code style in JavaScript
+
+## See Also
+Check out [JavaScript 2020 Salary Tool] which is a theoretical salary calculator derived from The State Of JS 2019 downloadable data using Machine Learning and Tensorflow.js
 
 ## Install
 >       $ npm install
@@ -30,3 +35,4 @@ See [package.json] version
 [React]: https://facebook.github.io/react/
 [Tensorflow.js]: https://www.tensorflow.org/js
 [Spectacle]: https://github.com/FormidableLabs/spectacle
+[JavaScript 2020 Salary Tool]: https://github.com/camsjams/state-of-js-salary
