@@ -32,6 +32,11 @@ import victoryLogo from '../assets/images/victory.svg';
 import caffeineLogo from '../assets/images/caffeine-chemistry.png';
 import kaggleLogo from '../assets/images/kaggle.png';
 import reactLogo from '../assets/images/react.svg';
+import kung from '../assets/images/kung-fury.gif';
+import math from '../assets/images/math.gif';
+import chess from '../assets/images/chess.gif';
+import captain from '../assets/images/captain-falcon.gif';
+import sc from '../assets/images/starcraft.gif';
 
 const StyledTableCell = styled(TableCell)`
 	text-align: right;
@@ -134,17 +139,28 @@ const App: FC = () =>
  // @ts-ignore*/}
 					<Appear elementNum={4}>
 						<ListItem>
-							Codes to Heavy Metal and Neo 80s music 🤘
+							I have four cats and two dogs 🐈‍🐈‍🐈‍🐈‍ | 🐕🐕
 						</ListItem>
 					</Appear>
 					{/*
  // @ts-ignore*/}
 					<Appear elementNum={5}>
 						<ListItem>
-							I have four cats and two dogs 🐕🐈‍
+							Code to Heavy Metal 🤘 and Neo 80s 👾 music
 						</ListItem>
 					</Appear>
 				</UnorderedList>
+				{/*
+ // @ts-ignore*/}
+				<Appear elementNum={5}>
+					<Image
+						style={{
+							position: 'absolute',
+							right: '4em',
+							top: '15em'
+						}}
+						src={kung} />
+				</Appear>
 			</Slide>
 			<Slide backgroundImage={gradientBgSection}>
 				<Heading>01 | Machine Learning</Heading>
@@ -162,21 +178,148 @@ const App: FC = () =>
 					values={[0, 1, 2]}>
 					{(value, step): ReactNode => <Slide04a step={step} />}
 				</Stepper>
+				{/*
+ // @ts-ignore*/}
+				<Appear elementNum={3}>
+					<Image
+						style={{
+							position: 'absolute',
+							right: '30em',
+							bottom: '2em',
+							height: '39%'
+						}}
+						src={math} />
+				</Appear>
 				<Notes>
 					<p>
-						Artificial Intelligence is the broad study of recreating human mental functions with computer programs
+						Our topic is better framed by looking at the field of artificial intelligence
 					</p>
 					<p>
-						Machine learning is the science of getting computers to act without being explicitly programmed
+						1. AI is the broad study of recreating human mental functions with computer programs
 					</p>
 					<p>
-						Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks
+						2. Machine learning is the science of getting computers to act without being explicitly programmed
+					</p>
+					<p>
+						2. Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks
 					</p>
 					<p>
 						So when we talk about Machine Learning, we are also talking about a subset of artificial intelligence, and Machine learning is helpful in many aspects of AI
 					</p>
 					<p>
-						Today we will just be covering Machine Learning
+						3. Today we will just be covering Machine Learning, and skipping over much of the math theory
+					</p>
+				</Notes>
+			</Slide>
+			<Slide backgroundImage="url(/bg/osman-rana-k8GxxWaIEAo-unsplash.jpg)">
+				<Heading>ML: Applications</Heading>
+				<UnorderedList backgroundColor="rgba(0,0,0,0.75)">
+					{/*
+ // @ts-ignore*/}
+					<Appear elementNum={1}>
+						<ListItem>
+							Predictions
+						</ListItem>
+					</Appear>
+					{/*
+ // @ts-ignore*/}
+					<Appear elementNum={2}>
+						<ListItem>
+							Object detection
+						</ListItem>
+					</Appear>
+					{/*
+ // @ts-ignore*/}
+					<Appear elementNum={3}>
+						<ListItem>Recommendations</ListItem>
+					</Appear>
+					{/*
+ // @ts-ignore*/}
+					<Appear elementNum={4}>
+						<ListItem>Autonomy and Path finding</ListItem>
+					</Appear>
+					{/*
+ // @ts-ignore*/}
+					<Appear elementNum={5}>
+						<ListItem>Video Games</ListItem>
+					</Appear>
+					{/*
+ // @ts-ignore*/}
+					<Appear elementNum={6}>
+						<ListItem>Board Games</ListItem>
+					</Appear>
+				</UnorderedList>
+				{/*
+ // @ts-ignore*/}
+				<Appear elementNum={5}>
+					<Image
+						style={{
+							position: 'absolute',
+							right: '6em',
+							top: '14em',
+							height: '25%'
+						}}
+						src={sc} />
+					<Image
+						style={{
+							position: 'absolute',
+							right: '6em',
+							top: '26.5em',
+							height: '25%'
+						}}
+						src={captain} />
+				</Appear>
+				{/*
+ // @ts-ignore*/}
+				<Appear elementNum={6}>
+					<Image
+						style={{
+							position: 'absolute',
+							left: '35em',
+							bottom: '1em',
+							height: '30%'
+						}}
+						src={chess} />
+				</Appear>
+				<Notes>
+					<p>
+						Machine learning has countless applications
+					</p>
+					<p>
+						1. Its primary use case is to perform predictions
+					</p>
+					<p>
+						2. but can also provide object detection
+					</p>
+					<p>
+						3. and recommendations
+					</p>
+					<p>
+						4. Machine learning can be used in environments to perform Autonomous movements and path finding
+					</p>
+					<p>
+						5. It can also be used to handle risk and reward in games, such as video games like starcraft or super smash bros
+					</p>
+					<p>
+						6. or board games like chess, go, and checkers
+					</p>
+				</Notes>
+			</Slide>
+			<Slide>
+				<Heading>Aside: Shift Left</Heading>
+				<Slide03 />
+				<Notes>
+					<p>
+						The idea is to improve quality by moving tasks to the left as early in the lifecycle as possible.
+					</p>
+					<p>
+						Shift Left testing means testing earlier in the software development process
+					</p>
+					<p>
+						Shifting left is not just for software development!
+					</p>
+					<p>
+						Shifting left ensures that we have taken a deep dive into our training set, and evaluated each feature and verified the data row by row
 					</p>
 				</Notes>
 			</Slide>
@@ -263,102 +406,31 @@ const App: FC = () =>
 				</UnorderedList>
 				<Notes>
 					<p>
-						With machine learning, we flip programming upside down, and extract a program using data and expect output
+						1. With machine learning, we flip programming upside down, and extract a program using data and expected output
 					</p>
 					<p>
-						There are five common steps with machine learning, and as always we want to shift left as much as possible
+						2. There are five common steps with machine learning, and as always we want to shift left as much as possible
+					</p>
+					<p>
+						3. Machine learning always starts with data, and if you&apos;re lucky, you dont have to collect it!
 					</p>
 					<p>
 						By shifting left, we can save time in the long run, regardless
 					</p>
 					<p>
-						Machine learning always starts with data, and if you&apos;re lucky, you dont have to collect it!
-					</p>
-					<p>
-						Next, we need to evaluate the data, which can often be done manually by a human being
+						4. Next, we need to evaluate the data, which can often be done manually by a human being
 					</p>
 					<p>
 						Once we have some good data, we can split it into two buckets: training data and testing data
 					</p>
 					<p>
-						This step is made to review the results, and possibly change models or address data issues
-					</p>
-				</Notes>
-			</Slide>
-			<Slide>
-				<Heading>Aside: Shift Left</Heading>
-				<Slide03 />
-				<Notes>
-					<p>
-						Shifting left is not just for software development!
+						5. Then we train. This is where most of the work happens on the computer
 					</p>
 					<p>
-						Shifting left ensures that we have taken a deep dive into our training set, and evaluated each feature and verified the data row by row
-					</p>
-				</Notes>
-			</Slide>
-			<Slide backgroundImage="url(/bg/osman-rana-k8GxxWaIEAo-unsplash.jpg)">
-				<Heading>ML: Applications</Heading>
-				<UnorderedList backgroundColor="rgba(0,0,0,0.75)">
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={0}>
-						<ListItem>
-							Speech Recognition
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={1}>
-						<ListItem>
-							Predictions
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={2}>
-						<ListItem>
-							Object detection
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={3}>
-						<ListItem>Recommendations</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={4}>
-						<ListItem>Medical Diagnosis</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={5}>
-						<ListItem>Autonomy and Path finding</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={6}>
-						<ListItem>Board Games</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={7}>
-						<ListItem>Video Games</ListItem>
-					</Appear>
-				</UnorderedList>
-				<Notes>
-					<p>
-						Machine learning has countless applications
+						6. Once training is complete, we can evaluate the produced model to see how well it works, reviewing the results, and possibly change models or address data issues
 					</p>
 					<p>
-						Its primary use case is to perform predictions, but can also provide object detection, Recommendations, and medical insight
-					</p>
-					<p>
-						Machine learning can be used in environments to perform Autonomous movements and path finding
-					</p>
-					<p>
-						It can also be used to handle risk and reward in games, such as video games like starcraft or super smash bros, or board games like chess, go, and checkers
+						7. Depending on all that, we may iterate multiple times
 					</p>
 				</Notes>
 			</Slide>
@@ -376,33 +448,19 @@ const App: FC = () =>
  // @ts-ignore*/}
 					<Appear elementNum={1}>
 						<ListItem>
-							A feature can be a single column (univariate)
+							More Features = Improved Prediction
 						</ListItem>
 					</Appear>
 					{/*
  // @ts-ignore*/}
 					<Appear elementNum={2}>
 						<ListItem>
-							Features can be multiple columns (multivariate)
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={3}>
-						<ListItem>
-							More Features = Improved Prediction
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={4}>
-						<ListItem>
 							More Rows of Data = Improved Prediction
 						</ListItem>
 					</Appear>
 					{/*
  // @ts-ignore*/}
-					<Appear elementNum={5}>
+					<Appear elementNum={3}>
 						<ListItem>
 							Engineered Features = Greatly Improved Prediction
 						</ListItem>
@@ -413,19 +471,22 @@ const App: FC = () =>
 						When discussing data in regards to machine learning, you will often hear the word features, labels or training sets
 					</p>
 					<p>
-						If thought about mathematically, features are the input x to a formula for a value y
+						1. If thought about mathematically, features are the input x to a formula for a value y
 					</p>
 					<p>
-						Labels are the name of outputs in Machine learning
+						2. Labels are the name of outputs in Machine learning
 					</p>
 					<p>
-						When dealing with data, adding more columns of features generally improves prediction
+						3. When dealing with data, adding more columns of features generally improves prediction
 					</p>
 					<p>
-						additionally, adding more data generally improves prediction
+						Be careful though, sometimes more columns of data can create noise
 					</p>
 					<p>
-						By leveraging domain experts and curating data, you can create additional feature inputs to increase model performance
+						4. additionally, adding more data generally improves prediction
+					</p>
+					<p>
+						5. By leveraging domain experts and curating data, you can create additional feature inputs to increase model performance
 					</p>
 				</Notes>
 			</Slide>
@@ -472,16 +533,16 @@ const App: FC = () =>
 						here is a sample of a classic machine learning data set exercise using houses and their sale price
 					</p>
 					<p>
-						As we look through the data, we see two features in the first two columns: the house name and its square footage
+						1. As we look through the data, we see two features in the first two columns: the house name and its square footage
 					</p>
 					<p>
 						The third column, Price, is our Y value, also called the label
 					</p>
 					<p>
-						At first glance, the data looks pretty accurate
+						2. At first glance, the data looks pretty accurate
 					</p>
 					<p>
-						Once we look deeper though, we see an odd issue
+						3. Once we look deeper though, we see an odd issue
 					</p>
 					<p>
 						The first house is 1000 square feet and sells for 200k, the second house is double that size, and sells for more than double the price
@@ -538,50 +599,7 @@ const App: FC = () =>
 						Now we can figure out why the third house price is so low when compared to the second house
 					</p>
 					<p>
-						Ah - the third house has only one bed and one bath - not very practical. Tt looks like someone bought it for 510k
-					</p>
-				</Notes>
-			</Slide>
-			<Slide>
-				<Heading>ML: Categories</Heading>
-				<UnorderedList>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={0}>
-						<ListItem>
-							Supervised (regression or classification)
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={1}>
-						<ListItem>
-							Unsupervised (clustering)
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={2}>
-						<ListItem>
-							Reinforcement Learning (environment) - also called RL
-						</ListItem>
-					</Appear>
-				</UnorderedList>
-				<Notes>
-					<p>
-						Machine learning can be broken down into three types
-					</p>
-					<p>
-						supervised machine learning, which uses regressions and classifications, provides clear instructions about the solution and the steps to solve a problem
-					</p>
-					<p>
-						unsupervised machine learning is used when no target is set or desired, and is more exploratory, providing a result of clusters highly useful for Recommendations or disease correlation
-					</p>
-					<p>
-						Reinforcement learning is training done in a specific environment, such as video games, self driving cars, etc, where a failure or reward is simple to determine
-					</p>
-					<p>
-						WE wont touch on all of these today, since these are available in most Machine Learning courses
+						Ah hah - the third house has only one bed and one bath - not very practical. Tt looks like someone bought it for 510k
 					</p>
 				</Notes>
 			</Slide>
@@ -604,7 +622,7 @@ const App: FC = () =>
  // @ts-ignore*/}
 					<Appear elementNum={0}>
 						<ListItem>
-							Run existing models
+							Develop ML with JavaScript
 						</ListItem>
 					</Appear>
 					{/*
@@ -618,19 +636,12 @@ const App: FC = () =>
  // @ts-ignore*/}
 					<Appear elementNum={2}>
 						<ListItem>
-							Develop ML with JavaScript
-						</ListItem>
-					</Appear>
-					{/*
- // @ts-ignore*/}
-					<Appear elementNum={3}>
-						<ListItem>
 							Retrain existing models
 						</ListItem>
 					</Appear>
 					{/*
  // @ts-ignore*/}
-					<Appear elementNum={4}>
+					<Appear elementNum={3}>
 						<ListItem>
 							Use ML directly in the browser or in Node.js
 						</ListItem>
@@ -639,16 +650,28 @@ const App: FC = () =>
  // @ts-ignore*/}
 					<Appear elementNum={4}>
 						<ListItem>
-							Load and run models produced by Cloud AutoML
+							Load and run models produced by Cloud AutoML or Python
 						</ListItem>
 					</Appear>
 				</UnorderedList>
 				<Notes>
 					<p>
-						Use off-the-shelf JavaScript models or convert Python TensorFlow models to run in the browser or under Node.js.
+						First and foremost, what is Tensorflow.js?
 					</p>
 					<p>
-						Retrain pre-existing ML models using your own data.
+						1. It is a library written natively in JavaScript to support machine learning
+					</p>
+					<p>
+						2. read
+					</p>
+					<p>
+						3. Retrain pre-existing ML models using your own data
+					</p>
+					<p>
+						4. Run your code directly in the browser or Node
+					</p>
+					<p>
+						5. Use off-the-shelf models from Cloud autoML or convert Python TensorFlow models to in JavaScript
 					</p>
 				</Notes>
 			</Slide>
@@ -694,7 +717,7 @@ const App: FC = () =>
  // @ts-ignore*/}
 					<Appear elementNum={5}>
 						<ListItem>
-							You can deploy your application into a widely-accessible environment
+							You can deploy into a widely-accessible environment
 						</ListItem>
 					</Appear>
 				</UnorderedList>
@@ -747,13 +770,16 @@ const App: FC = () =>
 				</UnorderedList>
 				<Notes>
 					<p>
+						There are many ways to run TensorFlow.js
+					</p>
+					<p>
 						As of right now, the fastest backend is the WebGL version that runs in the browser, with the GPU backend on Node being second
 					</p>
 				</Notes>
 			</Slide>
 			<Slide backgroundImage={gradientBgSection}>
 				<Heading>03 | Examples</Heading>
-				<Heading fontSize="h3">Let&apos;s Run Code!</Heading>
+				<Heading fontSize="h3">Show Me The Code!</Heading>
 				<SectionImage
 					src={run} />
 			</Slide>
@@ -768,16 +794,16 @@ const App: FC = () =>
 						Lets take a look at a table of data, typically with maching learning you want a lot more data
 					</p>
 					<p>
-						If this were a live audience, i&apos;d probably ask - what are we doing to get from the Input to Result
+						1. If this were a live audience, i&apos;d probably ask - what are we doing to get from the Input to Result
 					</p>
 					<p>
 						Somebody would likely yell out &laquo;Multiply Input by 3&raquo;, which is correct!
 					</p>
 					<p>
-						As you can see in this table, we can add in the hidden formula to make the process from Input to Result much more obvious
+						2. As you can see in this table, we can add in the hidden formula to make the process from Input to Result much more obvious
 					</p>
 					<p>
-						Here I&apos;ve charted two different data sets
+						3. Here I&apos;ve charted two different data sets
 					</p>
 					<p>
 						In the blue, we have our training set data which displays the relationship of the Input (graphed as X), to the Result (graphed as Y)
@@ -786,7 +812,7 @@ const App: FC = () =>
 						In the orange, we have our wild guess of 9 as the coefficient that converts a data set of Xs to Ys
 					</p>
 					<p>
-						When I enable the training process, you will see a third set that that shows the number being discovered over multiple iterations of learning
+						4. When I enable the training process, you will see a third set that that shows the number being discovered over multiple iterations of learning
 					</p>
 					<p>
 						Each new iteration starts with a more refined learned number input, which slowly moves our prediction towards the target of 3

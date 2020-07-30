@@ -97,21 +97,21 @@ const SlideComponent: FC<Props> = ({step}) =>
  // @ts-ignore*/}
 				<Appear elementNum={0}>
 					<ListItem>
-						Artificial Intelligence: Model human mental functions with computers
+						Artificial Intelligence
 					</ListItem>
 				</Appear>
 				{/*
  // @ts-ignore*/}
 				<Appear elementNum={1}>
 					<ListItem>
-						Machine learning: Train computers without programming
+						Machine learning
 					</ListItem>
 				</Appear>
 				{/*
  // @ts-ignore*/}
 				<Appear elementNum={2}>
 					<ListItem>
-						Deep Learning: Subset of ML using neural networks
+						Deep Learning
 					</ListItem>
 				</Appear>
 			</UnorderedList>
